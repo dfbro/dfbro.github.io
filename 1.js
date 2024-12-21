@@ -12,6 +12,7 @@ document.documentElement.innerHTML = `
         justify-content: center;
         align-items: center;
         height: 100vh;
+        background-color: black; /* Black background color */
         background-image: url('https://dfbro.github.io/p.png');
         background-size: contain;
         background-position: center;
