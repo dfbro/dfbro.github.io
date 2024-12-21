@@ -22,7 +22,7 @@ document.documentElement.innerHTML = `
   <body>
     <div>
       <h1>This Website Has Been Hacked!</h1>
-      <p>Minimal beli script. Sekolahnha saja yang Model tapi gak MODAL.</p>
+      <p>Minimal beli script. Sekolah Model tapi gak MODAL.</p>
     </div>
   </body>
 `;
