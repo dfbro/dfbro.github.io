@@ -12,7 +12,10 @@ document.documentElement.innerHTML = `
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: black;
+        background-image: url('https://dfbro.github.io/p.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
         color: red;
         font-family: Arial, sans-serif;
         text-align: center;
