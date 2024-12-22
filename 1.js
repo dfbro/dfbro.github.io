@@ -46,6 +46,6 @@ const interval = setInterval(() => {
   countdownElement.textContent = countdown;
   if (countdown === 0) {
     clearInterval(interval);
-    window.location.href = "https://www.roblox.com/games/126442967681279/MTsN-1-KEDIRI";
+    window.location.href = "https://youtube.com/@jogjaroblox";
   }
 }, 1000);
