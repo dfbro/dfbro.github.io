@@ -24,6 +24,7 @@ document.documentElement.innerHTML = `
       .countdown {
         font-size: 2rem;
         margin-top: 20px;
+        color: white;
       }
     </style>
   </head>
@@ -45,6 +46,6 @@ const interval = setInterval(() => {
   countdownElement.textContent = countdown;
   if (countdown === 0) {
     clearInterval(interval);
-    window.location.href = "https://www.roblox.com/share?code=1edc36275a6d2a4c87a62c8b475b589d&type=ExperienceDetails&stamp=1734829000383";
+    window.location.href = "https://www.roblox.com/games/126442967681279/MTsN-1-KEDIRI";
   }
 }, 1000);
