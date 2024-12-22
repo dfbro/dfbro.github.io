@@ -24,7 +24,7 @@ document.documentElement.innerHTML = `
       .countdown {
         font-size: 2rem;
         margin-top: 20px;
-        color: white;
+        color: red;
       }
     </style>
   </head>
