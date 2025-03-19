@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Play Audio</title>
+    <title>Play Audio in Hidden iFrame</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body onload="pp();">
+<body>
 
-<audio id="myAudio" loop>
-    <source src="https://upload.wikimedia.org/wikipedia/commons/f/f5/United_States_Navy_Band_-_Het_Wilhelmus_%28tempo_corrected%29.ogg" type="audio/ogg">
-    Your browser does not support the audio element.
-</audio>
+    <iframe id="dummyFrame" style="display:none;"></iframe>
 
-<script>
-    function pp(){
-        var audio = document.getElementById("myAudio");
-        audio.play().catch(error => {
-            console.log("Autoplay failed due to browser restrictions:", error);
+    <script>
+        $(document).ready(function() {
+            $("#dummyFrame").on("load", function() {
+                var audio = new Audio("https://upload.wikimedia.org/wikipedia/commons/f/f5/United_States_Navy_Band_-_Het_Wilhelmus_%28tempo_corrected%29.ogg");
+                audio.play();
+            });
+
+            // Set iframe src to trigger onload
+            $("#dummyFrame").attr("src", "about:blank");
         });
-    }
-</script>
+    </script>
 
 </body>
 </html>
