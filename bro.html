@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Audio</title>
+</head>
+<body>
+
+<audio id="myAudio">
+    <source src="https://upload.wikimedia.org/wikipedia/commons/f/f5/United_States_Navy_Band_-_Het_Wilhelmus_%28tempo_corrected%29.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    window.onload = function() {
+        var audio = document.getElementById("myAudio");
+        audio.play().catch(error => {
+            console.log("Autoplay failed due to browser restrictions:", error);
+        });
+    };
+</script>
+
+</body>
+</html>
