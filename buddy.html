@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universal URL Redirect</title>
+</head>
+<body>
+
+    <!-- Using type="text" because type="url" strictly requires http/https formats -->
+    <input type="text" id="userUrl" placeholder="Enter URI (e.g., ftp://, file://, mailto:, steam://)" style="width: 350px;">
+    <button onclick="redirectToUrl()">Go</button>
+
+    <script>
+        function redirectToUrl() {
+            let targetUrl = document.getElementById("userUrl").value.trim();
+
+            if (targetUrl !== "") {
+                // Warning: If no protocol (like ://) is detected, browsers treat it as a relative path
+                window.location.href = targetUrl;
+            } else {
+                alert("Please enter a destination first.");
+            }
+        }
+    </script>
+
+</body>
+</html>
